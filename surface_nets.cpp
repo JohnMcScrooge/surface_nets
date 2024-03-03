@@ -296,11 +296,11 @@ void SurfaceNets::surface_nets(
 		for (std::size_t quad = 0; quad < 3; quad++)
 		{
 			// Get the indices of the neighbours. 3 neighbours per loop, 3 loops. A total of 9 checks.
-			/* Here are the loop iterations : 	    ||                              ||
-			 * First iteration  : x - step, y       , z || x - step, y - step, z        || x, y - step, z
-			 * Second iteration : x - step, y       , z || x - step, y       , z - step || x, y       , z - step
-			 * Third iteration  : x       , y - step, z || x       , y - step, z - step || x, y       , z - step
-			 *                                          ||                              ||
+			/* Here are the loop iterations  : 	                 ||                              ||
+			 * First iteration of this loop  : x - step, y       , z || x - step, y - step, z        || x, y - step, z
+			 * Second iteration of this loop : x - step, y       , z || x - step, y       , z - step || x, y       , z - step
+			 * Third iteration of this loop  : x       , y - step, z || x       , y - step, z - step || x, y       , z - step
+			 *                                                       ||                              ||
 			 */
 			const size_t neighbor1 = GetIndex(
 				neighbor_grid_positions[quad_neighbors[quad][0]][0],
