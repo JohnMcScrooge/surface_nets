@@ -34,6 +34,7 @@ void SurfaceNets::surface_nets(
 	
 	
 	// Step 2: Vertex generation and placement                      -----------------------------------------------------------------
+	// Confident that this works fine
 	for (std::size_t z = 0; z < grid_info.GridSize.Z; z += step)
 	for (std::size_t y = 0; y < grid_info.GridSize.Y; y += step)
 	for (std::size_t x = 0; x < grid_info.GridSize.X; x += step)
